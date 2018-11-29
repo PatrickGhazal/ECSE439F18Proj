@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ASCII"?>
+<airport:Domainmodel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:airport="http://www.xtext.org/ecse439/project/Airport">
+  <elements name="YUL">
+    <schedule>
+      <date day="20" month="Jan" year="2018"/>
+      <flGate flight="//@elements.0/@allFli/@flights.0" gate="//@elements.0/@allGat/@gates.1">
+        <time hour="15" minute="20"/>
+      </flGate>
+      <flGate flight="//@elements.0/@allFli/@flights.1" gate="//@elements.0/@allGat/@gates.4">
+        <time hour="16" minute="10"/>
+      </flGate>
+    </schedule>
+    <allRun>
+      <runways name="R1" length="2000" used="false"/>
+      <runways name="R2" length="2200" used="false"/>
+    </allRun>
+    <allGat>
+      <gates name="G1" maxApSize="50"/>
+      <gates name="G2" maxApSize="45"/>
+      <gates name="G3" maxApSize="47"/>
+      <gates name="G4" maxApSize="48"/>
+      <gates name="G5" maxApSize="52"/>
+      <gates name="G6" maxApSize="39"/>
+    </allGat>
+    <allAir>
+      <airline name="AirCanada"/>
+      <airline name="AirFrance"/>
+    </allAir>
+    <allFli>
+      <flights name="AC400" airplaneSize="50" reqRunwayLg="2000">
+        <time hour="15" minute="20"/>
+      </flights>
+      <flights name="AF234" airplaneSize="54" reqRunwayLg="2150">
+        <time hour="16" minute="10"/>
+      </flights>
+    </allFli>
+    <allTer>
+      <terminals name="T1" runway="//@elements.0/@allRun/@runways.0" gates="//@elements.0/@allGat/@gates.0 //@elements.0/@allGat/@gates.1 //@elements.0/@allGat/@gates.2" airline="//@elements.0/@allAir/@airline.0"/>
+      <terminals name="T2" runway="//@elements.0/@allRun/@runways.1" gates="//@elements.0/@allGat/@gates.3 //@elements.0/@allGat/@gates.4 //@elements.0/@allGat/@gates.5" airline="//@elements.0/@allAir/@airline.1"/>
+    </allTer>
+  </elements>
+</airport:Domainmodel>

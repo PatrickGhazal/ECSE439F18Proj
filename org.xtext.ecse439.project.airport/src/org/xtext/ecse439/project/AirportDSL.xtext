@@ -1,0 +1,97 @@
+grammar org.xtext.ecse439.project.Airport with org.eclipse.xtext.common.Terminals
+
+generate airport "http://www.xtext.org/ecse439/project/Airport"
+
+Domainmodel :
+	elements+=Airport
+;
+
+Airport :
+	'Airport' name=ID '{'
+	schedule=Schedule
+	allRun=AllRunways
+	allGat=AllGates
+	allAir=AllAirlines
+	allFli=AllFlights
+	allTer=AllTerminals
+	'}'
+;
+
+AllTerminals :
+	'Terminals' '{'
+		(terminals+=Terminal)+
+	'}'
+	
+;
+
+AllRunways :
+	'Runways' '{'
+		(runways+=Runway)+
+	'}'
+;
+
+AllGates :
+	'Gates' '{'
+		(gates+=Gate)+
+	'}'
+;
+
+AllAirlines :
+	'Airlines' '{'
+		(airline+=Airline)+
+	'}'
+;
+
+AllFlights :
+	'Flights' '{'
+		(flights+=Flight)+
+	'}'
+;
+
+Schedule :
+	{Schedule} 'Schedule' 'for' date=Date '{' (flGate+=FlGate)* '}'
+;
+
+Flight :
+	name=ID ',' time=Time ',' 'Plane' 'size' ':' airplaneSize=INT ',' 'Needed' 'runway' 'length' ':' reqRunwayLg=INT 
+;
+
+FlGate :
+	'Flight' flight=[Flight] GATE_MESSAGE gate=[Gate] 'at' time=Time '.'
+;
+
+terminal GATE_MESSAGE :
+	" is arriving at " | " is departing from "
+;
+
+Terminal :
+	{Terminal} name=ID '{'
+	(runway=[Runway])
+	(gates+=[Gate])*
+	(airline=[Airline])
+	'}'
+;
+
+Runway :
+	name=ID '.' 'Length' ':' length=INT '.' 'In' 'use' ':' used=Boolean
+;
+
+Gate :
+	name=ID '.' 'Max' 'airplane' 'size' 'allowed' ':' maxApSize=INT
+;
+
+Airline :
+	name=ID
+;
+
+Date :
+	day=INT '-' month=ID '-' year=INT
+;
+
+Time :
+	hour=INT ':' minute=INT
+;
+
+Boolean :
+	'true' | 'false'
+;
