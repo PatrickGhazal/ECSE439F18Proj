@@ -29,7 +29,7 @@ import org.xtext.ecse439.project.airport.AllAirlines;
  * The following features are implemented:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.ecse439.project.airport.impl.AllAirlinesImpl#getAirline <em>Airline</em>}</li>
+ *   <li>{@link org.xtext.ecse439.project.airport.impl.AllAirlinesImpl#getAirlines <em>Airlines</em>}</li>
  * </ul>
  *
  * @generated
@@ -37,14 +37,14 @@ import org.xtext.ecse439.project.airport.AllAirlines;
 public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements AllAirlines
 {
   /**
-   * The cached value of the '{@link #getAirline() <em>Airline</em>}' containment reference list.
+   * The cached value of the '{@link #getAirlines() <em>Airlines</em>}' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAirline()
+   * @see #getAirlines()
    * @generated
    * @ordered
    */
-  protected EList<Airline> airline;
+  protected EList<Airline> airlines;
 
   /**
    * <!-- begin-user-doc -->
@@ -72,13 +72,13 @@ public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements All
    * <!-- end-user-doc -->
    * @generated
    */
-  public EList<Airline> getAirline()
+  public EList<Airline> getAirlines()
   {
-    if (airline == null)
+    if (airlines == null)
     {
-      airline = new EObjectContainmentEList<Airline>(Airline.class, this, AirportPackage.ALL_AIRLINES__AIRLINE);
+      airlines = new EObjectContainmentEList<Airline>(Airline.class, this, AirportPackage.ALL_AIRLINES__AIRLINES);
     }
-    return airline;
+    return airlines;
   }
 
   /**
@@ -91,8 +91,8 @@ public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements All
   {
     switch (featureID)
     {
-      case AirportPackage.ALL_AIRLINES__AIRLINE:
-        return ((InternalEList<?>)getAirline()).basicRemove(otherEnd, msgs);
+      case AirportPackage.ALL_AIRLINES__AIRLINES:
+        return ((InternalEList<?>)getAirlines()).basicRemove(otherEnd, msgs);
     }
     return super.eInverseRemove(otherEnd, featureID, msgs);
   }
@@ -107,8 +107,8 @@ public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements All
   {
     switch (featureID)
     {
-      case AirportPackage.ALL_AIRLINES__AIRLINE:
-        return getAirline();
+      case AirportPackage.ALL_AIRLINES__AIRLINES:
+        return getAirlines();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -124,9 +124,9 @@ public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements All
   {
     switch (featureID)
     {
-      case AirportPackage.ALL_AIRLINES__AIRLINE:
-        getAirline().clear();
-        getAirline().addAll((Collection<? extends Airline>)newValue);
+      case AirportPackage.ALL_AIRLINES__AIRLINES:
+        getAirlines().clear();
+        getAirlines().addAll((Collection<? extends Airline>)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -142,8 +142,8 @@ public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements All
   {
     switch (featureID)
     {
-      case AirportPackage.ALL_AIRLINES__AIRLINE:
-        getAirline().clear();
+      case AirportPackage.ALL_AIRLINES__AIRLINES:
+        getAirlines().clear();
         return;
     }
     super.eUnset(featureID);
@@ -159,8 +159,8 @@ public class AllAirlinesImpl extends MinimalEObjectImpl.Container implements All
   {
     switch (featureID)
     {
-      case AirportPackage.ALL_AIRLINES__AIRLINE:
-        return airline != null && !airline.isEmpty();
+      case AirportPackage.ALL_AIRLINES__AIRLINES:
+        return airlines != null && !airlines.isEmpty();
     }
     return super.eIsSet(featureID);
   }

@@ -230,17 +230,17 @@ public class AirportGrammarAccess extends AbstractGrammarElementFinder {
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cAirlinesKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_1 = (Keyword)cGroup.eContents().get(1);
-		private final Assignment cAirlineAssignment_2 = (Assignment)cGroup.eContents().get(2);
-		private final RuleCall cAirlineAirlineParserRuleCall_2_0 = (RuleCall)cAirlineAssignment_2.eContents().get(0);
+		private final Assignment cAirlinesAssignment_2 = (Assignment)cGroup.eContents().get(2);
+		private final RuleCall cAirlinesAirlineParserRuleCall_2_0 = (RuleCall)cAirlinesAssignment_2.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_3 = (Keyword)cGroup.eContents().get(3);
 		
 		//AllAirlines:
 		//	'Airlines' '{'
-		//	airline+=Airline+
+		//	airlines+=Airline+
 		//	'}';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'Airlines' '{' airline+=Airline+ '}'
+		//'Airlines' '{' airlines+=Airline+ '}'
 		public Group getGroup() { return cGroup; }
 		
 		//'Airlines'
@@ -249,11 +249,11 @@ public class AirportGrammarAccess extends AbstractGrammarElementFinder {
 		//'{'
 		public Keyword getLeftCurlyBracketKeyword_1() { return cLeftCurlyBracketKeyword_1; }
 		
-		//airline+=Airline+
-		public Assignment getAirlineAssignment_2() { return cAirlineAssignment_2; }
+		//airlines+=Airline+
+		public Assignment getAirlinesAssignment_2() { return cAirlinesAssignment_2; }
 		
 		//Airline
-		public RuleCall getAirlineAirlineParserRuleCall_2_0() { return cAirlineAirlineParserRuleCall_2_0; }
+		public RuleCall getAirlinesAirlineParserRuleCall_2_0() { return cAirlinesAirlineParserRuleCall_2_0; }
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_3() { return cRightCurlyBracketKeyword_3; }
@@ -493,19 +493,19 @@ public class AirportGrammarAccess extends AbstractGrammarElementFinder {
 		private final Assignment cGatesAssignment_4 = (Assignment)cGroup.eContents().get(4);
 		private final CrossReference cGatesGateCrossReference_4_0 = (CrossReference)cGatesAssignment_4.eContents().get(0);
 		private final RuleCall cGatesGateIDTerminalRuleCall_4_0_1 = (RuleCall)cGatesGateCrossReference_4_0.eContents().get(1);
-		private final Assignment cAirlineAssignment_5 = (Assignment)cGroup.eContents().get(5);
-		private final CrossReference cAirlineAirlineCrossReference_5_0 = (CrossReference)cAirlineAssignment_5.eContents().get(0);
-		private final RuleCall cAirlineAirlineIDTerminalRuleCall_5_0_1 = (RuleCall)cAirlineAirlineCrossReference_5_0.eContents().get(1);
+		private final Assignment cAirlinesAssignment_5 = (Assignment)cGroup.eContents().get(5);
+		private final CrossReference cAirlinesAirlineCrossReference_5_0 = (CrossReference)cAirlinesAssignment_5.eContents().get(0);
+		private final RuleCall cAirlinesAirlineIDTerminalRuleCall_5_0_1 = (RuleCall)cAirlinesAirlineCrossReference_5_0.eContents().get(1);
 		private final Keyword cRightCurlyBracketKeyword_6 = (Keyword)cGroup.eContents().get(6);
 		
 		//Terminal:
 		//	{Terminal} name=ID '{'
 		//	runway=[Runway] gates+=[Gate]*
-		//	airline=[Airline]
+		//	airlines=[Airline]
 		//	'}';
 		@Override public ParserRule getRule() { return rule; }
 		
-		//{Terminal} name=ID '{' runway=[Runway] gates+=[Gate]* airline=[Airline] '}'
+		//{Terminal} name=ID '{' runway=[Runway] gates+=[Gate]* airlines=[Airline] '}'
 		public Group getGroup() { return cGroup; }
 		
 		//{Terminal}
@@ -538,14 +538,14 @@ public class AirportGrammarAccess extends AbstractGrammarElementFinder {
 		//ID
 		public RuleCall getGatesGateIDTerminalRuleCall_4_0_1() { return cGatesGateIDTerminalRuleCall_4_0_1; }
 		
-		//airline=[Airline]
-		public Assignment getAirlineAssignment_5() { return cAirlineAssignment_5; }
+		//airlines=[Airline]
+		public Assignment getAirlinesAssignment_5() { return cAirlinesAssignment_5; }
 		
 		//[Airline]
-		public CrossReference getAirlineAirlineCrossReference_5_0() { return cAirlineAirlineCrossReference_5_0; }
+		public CrossReference getAirlinesAirlineCrossReference_5_0() { return cAirlinesAirlineCrossReference_5_0; }
 		
 		//ID
-		public RuleCall getAirlineAirlineIDTerminalRuleCall_5_0_1() { return cAirlineAirlineIDTerminalRuleCall_5_0_1; }
+		public RuleCall getAirlinesAirlineIDTerminalRuleCall_5_0_1() { return cAirlinesAirlineIDTerminalRuleCall_5_0_1; }
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_6() { return cRightCurlyBracketKeyword_6; }
@@ -914,7 +914,7 @@ public class AirportGrammarAccess extends AbstractGrammarElementFinder {
 	
 	//AllAirlines:
 	//	'Airlines' '{'
-	//	airline+=Airline+
+	//	airlines+=Airline+
 	//	'}';
 	public AllAirlinesElements getAllAirlinesAccess() {
 		return pAllAirlines;
@@ -975,7 +975,7 @@ public class AirportGrammarAccess extends AbstractGrammarElementFinder {
 	//Terminal:
 	//	{Terminal} name=ID '{'
 	//	runway=[Runway] gates+=[Gate]*
-	//	airline=[Airline]
+	//	airlines=[Airline]
 	//	'}';
 	public TerminalElements getTerminalAccess() {
 		return pTerminal;

@@ -61,7 +61,7 @@ public class AirportParser extends AbstractContentAssistParser {
 					put(grammarAccess.getAllTerminalsAccess().getTerminalsAssignment_2(), "rule__AllTerminals__TerminalsAssignment_2");
 					put(grammarAccess.getAllRunwaysAccess().getRunwaysAssignment_2(), "rule__AllRunways__RunwaysAssignment_2");
 					put(grammarAccess.getAllGatesAccess().getGatesAssignment_2(), "rule__AllGates__GatesAssignment_2");
-					put(grammarAccess.getAllAirlinesAccess().getAirlineAssignment_2(), "rule__AllAirlines__AirlineAssignment_2");
+					put(grammarAccess.getAllAirlinesAccess().getAirlinesAssignment_2(), "rule__AllAirlines__AirlinesAssignment_2");
 					put(grammarAccess.getAllFlightsAccess().getFlightsAssignment_2(), "rule__AllFlights__FlightsAssignment_2");
 					put(grammarAccess.getScheduleAccess().getDateAssignment_3(), "rule__Schedule__DateAssignment_3");
 					put(grammarAccess.getScheduleAccess().getFlGateAssignment_5(), "rule__Schedule__FlGateAssignment_5");
@@ -75,7 +75,7 @@ public class AirportParser extends AbstractContentAssistParser {
 					put(grammarAccess.getTerminalAccess().getNameAssignment_1(), "rule__Terminal__NameAssignment_1");
 					put(grammarAccess.getTerminalAccess().getRunwayAssignment_3(), "rule__Terminal__RunwayAssignment_3");
 					put(grammarAccess.getTerminalAccess().getGatesAssignment_4(), "rule__Terminal__GatesAssignment_4");
-					put(grammarAccess.getTerminalAccess().getAirlineAssignment_5(), "rule__Terminal__AirlineAssignment_5");
+					put(grammarAccess.getTerminalAccess().getAirlinesAssignment_5(), "rule__Terminal__AirlinesAssignment_5");
 					put(grammarAccess.getRunwayAccess().getNameAssignment_0(), "rule__Runway__NameAssignment_0");
 					put(grammarAccess.getRunwayAccess().getLengthAssignment_4(), "rule__Runway__LengthAssignment_4");
 					put(grammarAccess.getRunwayAccess().getUsedAssignment_9(), "rule__Runway__UsedAssignment_9");

@@ -262,13 +262,13 @@ public interface AirportPackage extends EPackage
   int ALL_AIRLINES = 5;
 
   /**
-   * The feature id for the '<em><b>Airline</b></em>' containment reference list.
+   * The feature id for the '<em><b>Airlines</b></em>' containment reference list.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int ALL_AIRLINES__AIRLINE = 0;
+  int ALL_AIRLINES__AIRLINES = 0;
 
   /**
    * The number of structural features of the '<em>All Airlines</em>' class.
@@ -483,13 +483,13 @@ public interface AirportPackage extends EPackage
   int TERMINAL__GATES = 2;
 
   /**
-   * The feature id for the '<em><b>Airline</b></em>' reference.
+   * The feature id for the '<em><b>Airlines</b></em>' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int TERMINAL__AIRLINE = 3;
+  int TERMINAL__AIRLINES = 3;
 
   /**
    * The number of structural features of the '<em>Terminal</em>' class.
@@ -877,15 +877,15 @@ public interface AirportPackage extends EPackage
   EClass getAllAirlines();
 
   /**
-   * Returns the meta object for the containment reference list '{@link org.xtext.ecse439.project.airport.AllAirlines#getAirline <em>Airline</em>}'.
+   * Returns the meta object for the containment reference list '{@link org.xtext.ecse439.project.airport.AllAirlines#getAirlines <em>Airlines</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the containment reference list '<em>Airline</em>'.
-   * @see org.xtext.ecse439.project.airport.AllAirlines#getAirline()
+   * @return the meta object for the containment reference list '<em>Airlines</em>'.
+   * @see org.xtext.ecse439.project.airport.AllAirlines#getAirlines()
    * @see #getAllAirlines()
    * @generated
    */
-  EReference getAllAirlines_Airline();
+  EReference getAllAirlines_Airlines();
 
   /**
    * Returns the meta object for class '{@link org.xtext.ecse439.project.airport.AllFlights <em>All Flights</em>}'.
@@ -1081,15 +1081,15 @@ public interface AirportPackage extends EPackage
   EReference getTerminal_Gates();
 
   /**
-   * Returns the meta object for the reference '{@link org.xtext.ecse439.project.airport.Terminal#getAirline <em>Airline</em>}'.
+   * Returns the meta object for the reference '{@link org.xtext.ecse439.project.airport.Terminal#getAirlines <em>Airlines</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the meta object for the reference '<em>Airline</em>'.
-   * @see org.xtext.ecse439.project.airport.Terminal#getAirline()
+   * @return the meta object for the reference '<em>Airlines</em>'.
+   * @see org.xtext.ecse439.project.airport.Terminal#getAirlines()
    * @see #getTerminal()
    * @generated
    */
-  EReference getTerminal_Airline();
+  EReference getTerminal_Airlines();
 
   /**
    * Returns the meta object for class '{@link org.xtext.ecse439.project.airport.Runway <em>Runway</em>}'.
@@ -1434,12 +1434,12 @@ public interface AirportPackage extends EPackage
     EClass ALL_AIRLINES = eINSTANCE.getAllAirlines();
 
     /**
-     * The meta object literal for the '<em><b>Airline</b></em>' containment reference list feature.
+     * The meta object literal for the '<em><b>Airlines</b></em>' containment reference list feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference ALL_AIRLINES__AIRLINE = eINSTANCE.getAllAirlines_Airline();
+    EReference ALL_AIRLINES__AIRLINES = eINSTANCE.getAllAirlines_Airlines();
 
     /**
      * The meta object literal for the '{@link org.xtext.ecse439.project.airport.impl.AllFlightsImpl <em>All Flights</em>}' class.
@@ -1596,12 +1596,12 @@ public interface AirportPackage extends EPackage
     EReference TERMINAL__GATES = eINSTANCE.getTerminal_Gates();
 
     /**
-     * The meta object literal for the '<em><b>Airline</b></em>' reference feature.
+     * The meta object literal for the '<em><b>Airlines</b></em>' reference feature.
      * <!-- begin-user-doc -->
      * <!-- end-user-doc -->
      * @generated
      */
-    EReference TERMINAL__AIRLINE = eINSTANCE.getTerminal_Airline();
+    EReference TERMINAL__AIRLINES = eINSTANCE.getTerminal_Airlines();
 
     /**
      * The meta object literal for the '{@link org.xtext.ecse439.project.airport.impl.RunwayImpl <em>Runway</em>}' class.

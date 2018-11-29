@@ -436,17 +436,17 @@ ruleAllAirlines returns [EObject current=null]
 		(
 			(
 				{
-					newCompositeNode(grammarAccess.getAllAirlinesAccess().getAirlineAirlineParserRuleCall_2_0());
+					newCompositeNode(grammarAccess.getAllAirlinesAccess().getAirlinesAirlineParserRuleCall_2_0());
 				}
-				lv_airline_2_0=ruleAirline
+				lv_airlines_2_0=ruleAirline
 				{
 					if ($current==null) {
 						$current = createModelElementForParent(grammarAccess.getAllAirlinesRule());
 					}
 					add(
 						$current,
-						"airline",
-						lv_airline_2_0,
+						"airlines",
+						lv_airlines_2_0,
 						"org.xtext.ecse439.project.Airport.Airline");
 					afterParserOrEnumRuleCall();
 				}
@@ -881,7 +881,7 @@ ruleTerminal returns [EObject current=null]
 				}
 				otherlv_5=RULE_ID
 				{
-					newLeafNode(otherlv_5, grammarAccess.getTerminalAccess().getAirlineAirlineCrossReference_5_0());
+					newLeafNode(otherlv_5, grammarAccess.getTerminalAccess().getAirlinesAirlineCrossReference_5_0());
 				}
 			)
 		)

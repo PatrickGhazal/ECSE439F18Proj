@@ -988,25 +988,25 @@ public class InternalAirportParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleAllAirlines"
-    // InternalAirport.g:420:1: ruleAllAirlines returns [EObject current=null] : (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airline_2_0= ruleAirline ) )+ otherlv_3= '}' ) ;
+    // InternalAirport.g:420:1: ruleAllAirlines returns [EObject current=null] : (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airlines_2_0= ruleAirline ) )+ otherlv_3= '}' ) ;
     public final EObject ruleAllAirlines() throws RecognitionException {
         EObject current = null;
 
         Token otherlv_0=null;
         Token otherlv_1=null;
         Token otherlv_3=null;
-        EObject lv_airline_2_0 = null;
+        EObject lv_airlines_2_0 = null;
 
 
 
         	enterRule();
 
         try {
-            // InternalAirport.g:426:2: ( (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airline_2_0= ruleAirline ) )+ otherlv_3= '}' ) )
-            // InternalAirport.g:427:2: (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airline_2_0= ruleAirline ) )+ otherlv_3= '}' )
+            // InternalAirport.g:426:2: ( (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airlines_2_0= ruleAirline ) )+ otherlv_3= '}' ) )
+            // InternalAirport.g:427:2: (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airlines_2_0= ruleAirline ) )+ otherlv_3= '}' )
             {
-            // InternalAirport.g:427:2: (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airline_2_0= ruleAirline ) )+ otherlv_3= '}' )
-            // InternalAirport.g:428:3: otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airline_2_0= ruleAirline ) )+ otherlv_3= '}'
+            // InternalAirport.g:427:2: (otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airlines_2_0= ruleAirline ) )+ otherlv_3= '}' )
+            // InternalAirport.g:428:3: otherlv_0= 'Airlines' otherlv_1= '{' ( (lv_airlines_2_0= ruleAirline ) )+ otherlv_3= '}'
             {
             otherlv_0=(Token)match(input,18,FOLLOW_4); 
 
@@ -1016,7 +1016,7 @@ public class InternalAirportParser extends AbstractInternalAntlrParser {
 
             			newLeafNode(otherlv_1, grammarAccess.getAllAirlinesAccess().getLeftCurlyBracketKeyword_1());
             		
-            // InternalAirport.g:436:3: ( (lv_airline_2_0= ruleAirline ) )+
+            // InternalAirport.g:436:3: ( (lv_airlines_2_0= ruleAirline ) )+
             int cnt4=0;
             loop4:
             do {
@@ -1030,16 +1030,16 @@ public class InternalAirportParser extends AbstractInternalAntlrParser {
 
                 switch (alt4) {
             	case 1 :
-            	    // InternalAirport.g:437:4: (lv_airline_2_0= ruleAirline )
+            	    // InternalAirport.g:437:4: (lv_airlines_2_0= ruleAirline )
             	    {
-            	    // InternalAirport.g:437:4: (lv_airline_2_0= ruleAirline )
-            	    // InternalAirport.g:438:5: lv_airline_2_0= ruleAirline
+            	    // InternalAirport.g:437:4: (lv_airlines_2_0= ruleAirline )
+            	    // InternalAirport.g:438:5: lv_airlines_2_0= ruleAirline
             	    {
 
-            	    					newCompositeNode(grammarAccess.getAllAirlinesAccess().getAirlineAirlineParserRuleCall_2_0());
+            	    					newCompositeNode(grammarAccess.getAllAirlinesAccess().getAirlinesAirlineParserRuleCall_2_0());
             	    				
             	    pushFollow(FOLLOW_12);
-            	    lv_airline_2_0=ruleAirline();
+            	    lv_airlines_2_0=ruleAirline();
 
             	    state._fsp--;
 
@@ -1049,8 +1049,8 @@ public class InternalAirportParser extends AbstractInternalAntlrParser {
             	    					}
             	    					add(
             	    						current,
-            	    						"airline",
-            	    						lv_airline_2_0,
+            	    						"airlines",
+            	    						lv_airlines_2_0,
             	    						"org.xtext.ecse439.project.Airport.Airline");
             	    					afterParserOrEnumRuleCall();
             	    				
@@ -2017,7 +2017,7 @@ public class InternalAirportParser extends AbstractInternalAntlrParser {
             				
             otherlv_5=(Token)match(input,RULE_ID,FOLLOW_11); 
 
-            					newLeafNode(otherlv_5, grammarAccess.getTerminalAccess().getAirlineAirlineCrossReference_5_0());
+            					newLeafNode(otherlv_5, grammarAccess.getTerminalAccess().getAirlinesAirlineCrossReference_5_0());
             				
 
             }

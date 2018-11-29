@@ -387,7 +387,7 @@ public class AirportPackageImpl extends EPackageImpl implements AirportPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getAllAirlines_Airline()
+  public EReference getAllAirlines_Airlines()
   {
     return (EReference)allAirlinesEClass.getEStructuralFeatures().get(0);
   }
@@ -577,7 +577,7 @@ public class AirportPackageImpl extends EPackageImpl implements AirportPackage
    * <!-- end-user-doc -->
    * @generated
    */
-  public EReference getTerminal_Airline()
+  public EReference getTerminal_Airlines()
   {
     return (EReference)terminalEClass.getEStructuralFeatures().get(3);
   }
@@ -794,7 +794,7 @@ public class AirportPackageImpl extends EPackageImpl implements AirportPackage
     createEReference(allGatesEClass, ALL_GATES__GATES);
 
     allAirlinesEClass = createEClass(ALL_AIRLINES);
-    createEReference(allAirlinesEClass, ALL_AIRLINES__AIRLINE);
+    createEReference(allAirlinesEClass, ALL_AIRLINES__AIRLINES);
 
     allFlightsEClass = createEClass(ALL_FLIGHTS);
     createEReference(allFlightsEClass, ALL_FLIGHTS__FLIGHTS);
@@ -818,7 +818,7 @@ public class AirportPackageImpl extends EPackageImpl implements AirportPackage
     createEAttribute(terminalEClass, TERMINAL__NAME);
     createEReference(terminalEClass, TERMINAL__RUNWAY);
     createEReference(terminalEClass, TERMINAL__GATES);
-    createEReference(terminalEClass, TERMINAL__AIRLINE);
+    createEReference(terminalEClass, TERMINAL__AIRLINES);
 
     runwayEClass = createEClass(RUNWAY);
     createEAttribute(runwayEClass, RUNWAY__NAME);
@@ -895,7 +895,7 @@ public class AirportPackageImpl extends EPackageImpl implements AirportPackage
     initEReference(getAllGates_Gates(), this.getGate(), null, "gates", null, 0, -1, AllGates.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(allAirlinesEClass, AllAirlines.class, "AllAirlines", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-    initEReference(getAllAirlines_Airline(), this.getAirline(), null, "airline", null, 0, -1, AllAirlines.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getAllAirlines_Airlines(), this.getAirline(), null, "airlines", null, 0, -1, AllAirlines.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(allFlightsEClass, AllFlights.class, "AllFlights", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEReference(getAllFlights_Flights(), this.getFlight(), null, "flights", null, 0, -1, AllFlights.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -919,7 +919,7 @@ public class AirportPackageImpl extends EPackageImpl implements AirportPackage
     initEAttribute(getTerminal_Name(), ecorePackage.getEString(), "name", null, 0, 1, Terminal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getTerminal_Runway(), this.getRunway(), null, "runway", null, 0, 1, Terminal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getTerminal_Gates(), this.getGate(), null, "gates", null, 0, -1, Terminal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, !IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
-    initEReference(getTerminal_Airline(), this.getAirline(), null, "airline", null, 0, 1, Terminal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEReference(getTerminal_Airlines(), this.getAirline(), null, "airlines", null, 0, 1, Terminal.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(runwayEClass, Runway.class, "Runway", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getRunway_Name(), ecorePackage.getEString(), "name", null, 0, 1, Runway.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

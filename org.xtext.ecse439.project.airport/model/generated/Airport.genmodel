@@ -28,7 +28,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Airport.ecore#//AllGates/gates"/>
     </genClasses>
     <genClasses ecoreClass="Airport.ecore#//AllAirlines">
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Airport.ecore#//AllAirlines/airline"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Airport.ecore#//AllAirlines/airlines"/>
     </genClasses>
     <genClasses ecoreClass="Airport.ecore#//AllFlights">
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Airport.ecore#//AllFlights/flights"/>
@@ -52,7 +52,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Airport.ecore#//Terminal/name"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Airport.ecore#//Terminal/runway"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Airport.ecore#//Terminal/gates"/>
-      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Airport.ecore#//Terminal/airline"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Airport.ecore#//Terminal/airlines"/>
     </genClasses>
     <genClasses ecoreClass="Airport.ecore#//Runway">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Airport.ecore#//Runway/name"/>

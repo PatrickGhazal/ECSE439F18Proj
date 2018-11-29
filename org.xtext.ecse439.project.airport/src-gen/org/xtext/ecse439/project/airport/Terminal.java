@@ -19,7 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link org.xtext.ecse439.project.airport.Terminal#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.ecse439.project.airport.Terminal#getRunway <em>Runway</em>}</li>
  *   <li>{@link org.xtext.ecse439.project.airport.Terminal#getGates <em>Gates</em>}</li>
- *   <li>{@link org.xtext.ecse439.project.airport.Terminal#getAirline <em>Airline</em>}</li>
+ *   <li>{@link org.xtext.ecse439.project.airport.Terminal#getAirlines <em>Airlines</em>}</li>
  * </ul>
  *
  * @see org.xtext.ecse439.project.airport.AirportPackage#getTerminal()
@@ -97,29 +97,29 @@ public interface Terminal extends EObject
   EList<Gate> getGates();
 
   /**
-   * Returns the value of the '<em><b>Airline</b></em>' reference.
+   * Returns the value of the '<em><b>Airlines</b></em>' reference.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Airline</em>' reference isn't clear,
+   * If the meaning of the '<em>Airlines</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Airline</em>' reference.
-   * @see #setAirline(Airline)
-   * @see org.xtext.ecse439.project.airport.AirportPackage#getTerminal_Airline()
+   * @return the value of the '<em>Airlines</em>' reference.
+   * @see #setAirlines(Airline)
+   * @see org.xtext.ecse439.project.airport.AirportPackage#getTerminal_Airlines()
    * @model
    * @generated
    */
-  Airline getAirline();
+  Airline getAirlines();
 
   /**
-   * Sets the value of the '{@link org.xtext.ecse439.project.airport.Terminal#getAirline <em>Airline</em>}' reference.
+   * Sets the value of the '{@link org.xtext.ecse439.project.airport.Terminal#getAirlines <em>Airlines</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Airline</em>' reference.
-   * @see #getAirline()
+   * @param value the new value of the '<em>Airlines</em>' reference.
+   * @see #getAirlines()
    * @generated
    */
-  void setAirline(Airline value);
+  void setAirlines(Airline value);
 
 } // Terminal

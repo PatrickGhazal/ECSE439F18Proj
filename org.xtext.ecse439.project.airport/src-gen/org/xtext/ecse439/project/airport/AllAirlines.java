@@ -16,7 +16,7 @@ import org.eclipse.emf.ecore.EObject;
  * The following features are supported:
  * </p>
  * <ul>
- *   <li>{@link org.xtext.ecse439.project.airport.AllAirlines#getAirline <em>Airline</em>}</li>
+ *   <li>{@link org.xtext.ecse439.project.airport.AllAirlines#getAirlines <em>Airlines</em>}</li>
  * </ul>
  *
  * @see org.xtext.ecse439.project.airport.AirportPackage#getAllAirlines()
@@ -26,19 +26,19 @@ import org.eclipse.emf.ecore.EObject;
 public interface AllAirlines extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Airline</b></em>' containment reference list.
+   * Returns the value of the '<em><b>Airlines</b></em>' containment reference list.
    * The list contents are of type {@link org.xtext.ecse439.project.airport.Airline}.
    * <!-- begin-user-doc -->
    * <p>
-   * If the meaning of the '<em>Airline</em>' containment reference list isn't clear,
+   * If the meaning of the '<em>Airlines</em>' containment reference list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Airline</em>' containment reference list.
-   * @see org.xtext.ecse439.project.airport.AirportPackage#getAllAirlines_Airline()
+   * @return the value of the '<em>Airlines</em>' containment reference list.
+   * @see org.xtext.ecse439.project.airport.AirportPackage#getAllAirlines_Airlines()
    * @model containment="true"
    * @generated
    */
-  EList<Airline> getAirline();
+  EList<Airline> getAirlines();
 
 } // AllAirlines

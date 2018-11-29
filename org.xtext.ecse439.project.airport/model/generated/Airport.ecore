@@ -34,7 +34,7 @@
         eType="#//Gate" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllAirlines">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="airline" upperBound="-1"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="airlines" upperBound="-1"
         eType="#//Airline" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="AllFlights">
@@ -62,7 +62,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="runway" eType="#//Runway"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="gates" unique="false" upperBound="-1"
         eType="#//Gate"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="airline" eType="#//Airline"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="airlines" eType="#//Airline"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Runway">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

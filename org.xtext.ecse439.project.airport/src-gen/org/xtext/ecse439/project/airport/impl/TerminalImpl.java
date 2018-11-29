@@ -34,7 +34,7 @@ import org.xtext.ecse439.project.airport.Terminal;
  *   <li>{@link org.xtext.ecse439.project.airport.impl.TerminalImpl#getName <em>Name</em>}</li>
  *   <li>{@link org.xtext.ecse439.project.airport.impl.TerminalImpl#getRunway <em>Runway</em>}</li>
  *   <li>{@link org.xtext.ecse439.project.airport.impl.TerminalImpl#getGates <em>Gates</em>}</li>
- *   <li>{@link org.xtext.ecse439.project.airport.impl.TerminalImpl#getAirline <em>Airline</em>}</li>
+ *   <li>{@link org.xtext.ecse439.project.airport.impl.TerminalImpl#getAirlines <em>Airlines</em>}</li>
  * </ul>
  *
  * @generated
@@ -82,14 +82,14 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
   protected EList<Gate> gates;
 
   /**
-   * The cached value of the '{@link #getAirline() <em>Airline</em>}' reference.
+   * The cached value of the '{@link #getAirlines() <em>Airlines</em>}' reference.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getAirline()
+   * @see #getAirlines()
    * @generated
    * @ordered
    */
-  protected Airline airline;
+  protected Airline airlines;
 
   /**
    * <!-- begin-user-doc -->
@@ -197,19 +197,19 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
    * <!-- end-user-doc -->
    * @generated
    */
-  public Airline getAirline()
+  public Airline getAirlines()
   {
-    if (airline != null && airline.eIsProxy())
+    if (airlines != null && airlines.eIsProxy())
     {
-      InternalEObject oldAirline = (InternalEObject)airline;
-      airline = (Airline)eResolveProxy(oldAirline);
-      if (airline != oldAirline)
+      InternalEObject oldAirlines = (InternalEObject)airlines;
+      airlines = (Airline)eResolveProxy(oldAirlines);
+      if (airlines != oldAirlines)
       {
         if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, AirportPackage.TERMINAL__AIRLINE, oldAirline, airline));
+          eNotify(new ENotificationImpl(this, Notification.RESOLVE, AirportPackage.TERMINAL__AIRLINES, oldAirlines, airlines));
       }
     }
-    return airline;
+    return airlines;
   }
 
   /**
@@ -217,9 +217,9 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
    * <!-- end-user-doc -->
    * @generated
    */
-  public Airline basicGetAirline()
+  public Airline basicGetAirlines()
   {
-    return airline;
+    return airlines;
   }
 
   /**
@@ -227,12 +227,12 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
    * <!-- end-user-doc -->
    * @generated
    */
-  public void setAirline(Airline newAirline)
+  public void setAirlines(Airline newAirlines)
   {
-    Airline oldAirline = airline;
-    airline = newAirline;
+    Airline oldAirlines = airlines;
+    airlines = newAirlines;
     if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, AirportPackage.TERMINAL__AIRLINE, oldAirline, airline));
+      eNotify(new ENotificationImpl(this, Notification.SET, AirportPackage.TERMINAL__AIRLINES, oldAirlines, airlines));
   }
 
   /**
@@ -252,9 +252,9 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
         return basicGetRunway();
       case AirportPackage.TERMINAL__GATES:
         return getGates();
-      case AirportPackage.TERMINAL__AIRLINE:
-        if (resolve) return getAirline();
-        return basicGetAirline();
+      case AirportPackage.TERMINAL__AIRLINES:
+        if (resolve) return getAirlines();
+        return basicGetAirlines();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -280,8 +280,8 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
         getGates().clear();
         getGates().addAll((Collection<? extends Gate>)newValue);
         return;
-      case AirportPackage.TERMINAL__AIRLINE:
-        setAirline((Airline)newValue);
+      case AirportPackage.TERMINAL__AIRLINES:
+        setAirlines((Airline)newValue);
         return;
     }
     super.eSet(featureID, newValue);
@@ -306,8 +306,8 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
       case AirportPackage.TERMINAL__GATES:
         getGates().clear();
         return;
-      case AirportPackage.TERMINAL__AIRLINE:
-        setAirline((Airline)null);
+      case AirportPackage.TERMINAL__AIRLINES:
+        setAirlines((Airline)null);
         return;
     }
     super.eUnset(featureID);
@@ -329,8 +329,8 @@ public class TerminalImpl extends MinimalEObjectImpl.Container implements Termin
         return runway != null;
       case AirportPackage.TERMINAL__GATES:
         return gates != null && !gates.isEmpty();
-      case AirportPackage.TERMINAL__AIRLINE:
-        return airline != null;
+      case AirportPackage.TERMINAL__AIRLINES:
+        return airlines != null;
     }
     return super.eIsSet(featureID);
   }

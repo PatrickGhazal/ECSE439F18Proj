@@ -38,7 +38,7 @@ AllGates :
 
 AllAirlines :
 	'Airlines' '{'
-		(airline+=Airline)+
+		(airlines+=Airline)+
 	'}'
 ;
 
@@ -68,7 +68,7 @@ Terminal :
 	{Terminal} name=ID '{'
 	(runway=[Runway])
 	(gates+=[Gate])*
-	(airline=[Airline])
+	(airlines=[Airline])
 	'}'
 ;
 

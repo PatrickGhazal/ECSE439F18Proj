@@ -1183,14 +1183,14 @@ rule__AllAirlines__Group__2__Impl
 :
 (
 	(
-		{ before(grammarAccess.getAllAirlinesAccess().getAirlineAssignment_2()); }
-		(rule__AllAirlines__AirlineAssignment_2)
-		{ after(grammarAccess.getAllAirlinesAccess().getAirlineAssignment_2()); }
+		{ before(grammarAccess.getAllAirlinesAccess().getAirlinesAssignment_2()); }
+		(rule__AllAirlines__AirlinesAssignment_2)
+		{ after(grammarAccess.getAllAirlinesAccess().getAirlinesAssignment_2()); }
 	)
 	(
-		{ before(grammarAccess.getAllAirlinesAccess().getAirlineAssignment_2()); }
-		(rule__AllAirlines__AirlineAssignment_2)*
-		{ after(grammarAccess.getAllAirlinesAccess().getAirlineAssignment_2()); }
+		{ before(grammarAccess.getAllAirlinesAccess().getAirlinesAssignment_2()); }
+		(rule__AllAirlines__AirlinesAssignment_2)*
+		{ after(grammarAccess.getAllAirlinesAccess().getAirlinesAssignment_2()); }
 	)
 )
 ;
@@ -2249,9 +2249,9 @@ rule__Terminal__Group__5__Impl
 	}
 :
 (
-	{ before(grammarAccess.getTerminalAccess().getAirlineAssignment_5()); }
-	(rule__Terminal__AirlineAssignment_5)
-	{ after(grammarAccess.getTerminalAccess().getAirlineAssignment_5()); }
+	{ before(grammarAccess.getTerminalAccess().getAirlinesAssignment_5()); }
+	(rule__Terminal__AirlinesAssignment_5)
+	{ after(grammarAccess.getTerminalAccess().getAirlinesAssignment_5()); }
 )
 ;
 finally {
@@ -3152,15 +3152,15 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__AllAirlines__AirlineAssignment_2
+rule__AllAirlines__AirlinesAssignment_2
 	@init {
 		int stackSize = keepStackSize();
 	}
 :
 	(
-		{ before(grammarAccess.getAllAirlinesAccess().getAirlineAirlineParserRuleCall_2_0()); }
+		{ before(grammarAccess.getAllAirlinesAccess().getAirlinesAirlineParserRuleCall_2_0()); }
 		ruleAirline
-		{ after(grammarAccess.getAllAirlinesAccess().getAirlineAirlineParserRuleCall_2_0()); }
+		{ after(grammarAccess.getAllAirlinesAccess().getAirlinesAirlineParserRuleCall_2_0()); }
 	)
 ;
 finally {
@@ -3378,19 +3378,19 @@ finally {
 	restoreStackSize(stackSize);
 }
 
-rule__Terminal__AirlineAssignment_5
+rule__Terminal__AirlinesAssignment_5
 	@init {
 		int stackSize = keepStackSize();
 	}
 :
 	(
-		{ before(grammarAccess.getTerminalAccess().getAirlineAirlineCrossReference_5_0()); }
+		{ before(grammarAccess.getTerminalAccess().getAirlinesAirlineCrossReference_5_0()); }
 		(
-			{ before(grammarAccess.getTerminalAccess().getAirlineAirlineIDTerminalRuleCall_5_0_1()); }
+			{ before(grammarAccess.getTerminalAccess().getAirlinesAirlineIDTerminalRuleCall_5_0_1()); }
 			RULE_ID
-			{ after(grammarAccess.getTerminalAccess().getAirlineAirlineIDTerminalRuleCall_5_0_1()); }
+			{ after(grammarAccess.getTerminalAccess().getAirlinesAirlineIDTerminalRuleCall_5_0_1()); }
 		)
-		{ after(grammarAccess.getTerminalAccess().getAirlineAirlineCrossReference_5_0()); }
+		{ after(grammarAccess.getTerminalAccess().getAirlinesAirlineCrossReference_5_0()); }
 	)
 ;
 finally {

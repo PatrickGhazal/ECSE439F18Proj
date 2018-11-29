@@ -167,7 +167,7 @@ public class AirportSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     AllAirlines returns AllAirlines
 	 *
 	 * Constraint:
-	 *     airline+=Airline+
+	 *     airlines+=Airline+
 	 */
 	protected void sequence_AllAirlines(ISerializationContext context, AllAirlines semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -371,7 +371,7 @@ public class AirportSemanticSequencer extends AbstractDelegatingSemanticSequence
 	 *     Terminal returns Terminal
 	 *
 	 * Constraint:
-	 *     (name=ID runway=[Runway|ID] gates+=[Gate|ID]* airline=[Airline|ID])
+	 *     (name=ID runway=[Runway|ID] gates+=[Gate|ID]* airlines=[Airline|ID])
 	 */
 	protected void sequence_Terminal(ISerializationContext context, Terminal semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
